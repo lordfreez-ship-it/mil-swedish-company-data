@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.lordfreez-ship-it/mil",
+  "title": "MIL — Machine Intelligence Layer",
+  "description": "Swedish company data (Bolagsverket, SCB) for AI agents, verified, with history and annual reports",
+  "repository": {
+    "url": "https://github.com/lordfreez-ship-it/mil-swedish-company-data",
+    "source": "github"
+  },
+  "websiteUrl": "https://www.milquery.com",
+  "version": "0.4.2",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.milquery.com/api/mcp?src=registry",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional: 'Bearer <MIL API key>' for a Stripe card account. Without it, Basic is free and paid tools are bought per call with x402 (USDC on Base).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
