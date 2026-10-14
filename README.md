@@ -17,6 +17,8 @@ claude mcp add --transport http mil https://www.milquery.com/api/mcp?src=readme
 
 **Claude (web and desktop, Pro/Max/Team/Enterprise)** — Connectors → *Add custom connector* → paste `https://www.milquery.com/api/mcp?src=readme`.
 
+**ChatGPT** — add a custom connector with `https://www.milquery.com/api/mcp?src=chatgpt`. MIL provides the `search` and `fetch` tools ChatGPT connectors use. No key.
+
 **VS Code / Cursor** — the buttons above, or add this to your MCP config:
 
 ```json
